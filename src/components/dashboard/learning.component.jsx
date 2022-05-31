@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Icon } from "@iconify/react";
 
 export default function Learning() {
   const container = {
@@ -16,6 +17,10 @@ export default function Learning() {
         <h1 className="text-2xl font-bold">It's Time to learning.</h1>
         <p>have fun ygy</p>
       </motion.div>
+
+      <div>
+        <p className="text-xs mb-2 ">Result 2  from 2 </p>
+      </div>
       <div className="flex gap-5">
         <motion.div
           className="base w-auto px-2 py-2 rounded shadow-md shadow-gray-50/4"
@@ -37,7 +42,10 @@ export default function Learning() {
             </h2>
           </div>
           <div>
-            <button className="primary w-full">Learn Now !</button>
+            <button className="primary w-full flex justify-center gap-1">
+              <Icon icon="ant-design:play-circle-filled" width="24" />
+              <span>Learn Now.</span>
+            </button>
           </div>
         </motion.div>
         <motion.div
@@ -55,12 +63,13 @@ export default function Learning() {
               className="rounded-md"
             />
             <h1 className="font-semibold pt-2">React Js zeros to pros</h1>
-            <h2 className="text-xs font-smooth mb-2">
-              Author by Unknown
-            </h2>
+            <h2 className="text-xs font-smooth mb-2">Author by Unknown</h2>
           </div>
           <div>
-            <button className="primary w-full">Learn Now !</button>
+            <button className="primary w-full flex justify-center gap-1">
+              <Icon icon="ant-design:play-circle-filled" width="24" />
+              <span>Learn Now.</span>
+            </button>
           </div>
         </motion.div>
       </div>
